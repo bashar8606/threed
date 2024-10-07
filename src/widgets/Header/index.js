@@ -76,23 +76,20 @@ export default Header;
 
 const data = [
     {
-        label: "Home",
+        label: "Shop",
         url: "#"
     }, {
-        label: "About Us",
+        label: "About us",
         url: "#about"
     }, {
-        label: "What We Offer",
+        label: "Product",
         url: "#whatweoffer"
     }, {
-        label: "Features",
+        label: "Services",
         url: "#features"
     },{
-        label: "Learn ",
+        label: "Contact ",
         url: "#learn"
-    },{
-        label: "Contact",
-        url: "#contact"
     },
 ]
 
