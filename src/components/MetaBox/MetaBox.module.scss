@@ -1,7 +1,10 @@
-@import '../../style/variable.scss';
+@import "../../style/variable.scss";
 .wrap {
-    --bs-aspect-ratio: 75%;
-    &>* {
-        position: absolute !important;
-    }
+  --bs-aspect-ratio: 70%;
+  @include md {
+    --bs-aspect-ratio: 50%;
+  }
+  & > * {
+    position: absolute !important;
+  }
 }

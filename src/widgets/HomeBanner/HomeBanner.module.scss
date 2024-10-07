@@ -1,19 +1,48 @@
-@import '../../style/variable.scss';
-
+@import "../../style/variable.scss";
 
 .section {
-    @include lg {
-        min-height: calc(100vh - var(--header-height));
-    }
+  padding: 100px 0 0;
+  min-height: 100svh;
+  @include lg {
+    min-height: 100vh;
+  }
 
-    :global(.container) {
-        @include min(2000) {
-            max-width: 90%;
-        }
+  :global(.container) {
+    @include min(2000) {
+      max-width: 90%;
     }
+  }
 }
 
 .shape {
-    width: 80%;
-    --bs-aspect-ratio: 67%;
+  width: 80%;
+  --bs-aspect-ratio: 67%;
+  z-index: 1;
+}
+
+.model_wrap {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 2;
+  @include md {
+    top: initial;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+}
+
+.reality {
+  --bs-aspect-ratio: 16%;
+}
+
+
+.card{
+    &_icon {
+        --size:32px;
+        width: var(--size);
+        height: var(--size);
+    }
 }

@@ -5,9 +5,11 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
 gsap.config({ force3D: true });
-export const useHomeFeatures = ({style}) => {
+export const useHomeTestimonials = ({style}) => {
   gsap.registerPlugin(ScrollTrigger);
   const main = useRef(null);
+
+
 
   useGSAP(() => {
     // const title = `.${style.title}`;
@@ -25,6 +27,6 @@ export const useHomeFeatures = ({style}) => {
   }, { scope: main });
 
   return {
-    main
+    main,
   };
 };

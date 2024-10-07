@@ -1,62 +1,29 @@
-@import '../../style/variable.scss';
+@import "../../style/variable.scss";
 
 .card {
-    --bg: #C59AFF;
-    --color: #3FBEC2;
-    background-color: var(--bg);
-    border-radius: 20px;
-    padding: 22px 20px 33px;
+  --bg: rgba(0, 0, 0, 0);
+  background-color: var(--bg);
+  border-radius: 20px;
+  padding: 22px 20px 33px;
+  border: 1px solid transparent;
+  transition: 0.5s all ease;
+  transform: translateY(0);
 
-    @include lg {
-        border-radius: size(34);
-        padding: size(30) size(30) size(43);
-    }
+  @include lg {
+    border-radius: size(34);
+    padding: size(30) size(26) size(30);
+  }
+  .title {
+    margin-bottom: 32px;
+    font-style: italic;
+    line-height: 1.5;
+    max-width: 200px;
+  }
 
-    &:global(.one) {
-        --bg: #FE4BCD;
-    }
+  &:hover {
+    --bg: rgba(0, 0, 0, 0.058);
+    border-color: $light;
+    transform: translateY(-10%);
 
-    &:global(.two) {
-        --bg: #884AFF;
-    }
-
-    &:global(.three) {
-        --bg: #EFBB37;
-    }
-
-    &:global(.four) {
-        --bg: #F6F0FF;
-        --color: #8D6AC1;
-    }
-
-    .title {
-        font-size: 22px;
-        @include lg {
-            font-size: 26px;
-        }
-        @include xl {
-            font-size: 30px;
-
-        }
-    }
-
-    &_head {}
-
-    .icon {
-        --size: 38px;
-        width: var(--size);
-        height: var(--size);
-        margin-bottom: 30px;
-        @include lg {
-            --size: #{size(60)};
-            margin-bottom: 56px;
-
-        }
-    }
-
-    &_body {
-        p {
-            color: #4D4D4D;
-        }
-    }
+  }
 }
