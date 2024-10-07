@@ -46,15 +46,10 @@
 }
 
 .logo {
-    --bs-aspect-ratio: 21.9%;
+    --bs-aspect-ratio: 17.5%;
     width: 150px;
     @include lg {
-        width: 11rem;
-    }
-
-    &_sm {
-        --bs-aspect-ratio: 30.76%;
-        width: 80px;
+        width: 91px;
     }
 }
 
