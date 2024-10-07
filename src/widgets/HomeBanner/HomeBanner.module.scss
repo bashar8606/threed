@@ -1,0 +1,19 @@
+@import '../../style/variable.scss';
+
+
+.section {
+    @include lg {
+        min-height: calc(100vh - var(--header-height));
+    }
+
+    :global(.container) {
+        @include min(2000) {
+            max-width: 90%;
+        }
+    }
+}
+
+.shape {
+    width: 80%;
+    --bs-aspect-ratio: 67%;
+}

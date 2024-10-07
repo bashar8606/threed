@@ -1,0 +1,7 @@
+@import '../../style/variable.scss';
+.wrap {
+    --bs-aspect-ratio: 75%;
+    &>* {
+        position: absolute !important;
+    }
+}

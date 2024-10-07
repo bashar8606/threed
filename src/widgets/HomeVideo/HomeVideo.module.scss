@@ -1,0 +1,66 @@
+@import "../../style/variable.scss";
+
+.section {
+  padding: size(60) 0;
+  overflow: hidden;
+  @include lg {
+    padding: 100px 0;
+  }
+}
+.cover {
+  max-width: 420px;
+  &_img {
+    --bs-aspect-ratio: 124%;
+    mask-image: url("/assets/images/mask1.svg");
+    mask-size: 100%;
+    -webkit-mask-image: url("/assets/images/mask1.svg");
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}
+.title_wrap {
+  margin-bottom: 100px;
+}
+
+.title {
+  margin-bottom: 30px;
+  @include lg {
+    margin-bottom: size(60);
+  }
+  &_span {
+    will-change: opacity;
+  }
+}
+
+.list {
+  &_item {
+    padding: 10px 0;
+    border-bottom: 1px solid $grey;
+    color: #9ca8bb;
+  }
+}
+
+.video {
+  --bs-aspect-ratio: 50%;
+  border-radius: 16px;
+  will-change: transform;
+  margin-bottom: 20px;
+}
+
+.card_wrap {
+  will-change: transform, opacity;
+}
+.shape {
+  --bs-aspect-ratio: 66%;
+  width: 95%;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  will-change: transform, opacity;
+}
+
+.card{
+  border-radius: 30px;
+}

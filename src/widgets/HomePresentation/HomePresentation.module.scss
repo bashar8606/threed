@@ -1,0 +1,45 @@
+@import '../../style/variable.scss';
+
+
+.section {
+    @include lg {
+        min-height: 100vh;
+    }
+}
+
+.line {
+    &_item {
+        border-bottom: 1px solid #17283E;
+        min-height: 125px;
+        &:first-of-type {
+            border-top: 1px solid #17283E;
+        }
+    }
+}
+
+.img {
+    position: absolute;
+    top: 50%;
+    width: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &_banner {
+        --bs-aspect-ratio: 60%;
+        transform: rotate(-12deg);
+        will-change: transform;
+    }
+    &_shape {
+        --bs-aspect-ratio: 207%;
+        border-radius: 15px;
+        overflow: hidden;
+        top: -12%;
+        left: 50%;
+        transform: translateX(-50%) rotate(15deg);
+        width: 34%;
+        will-change: transform;
+    }
+}
+
+.title {
+    will-change: transform;
+}

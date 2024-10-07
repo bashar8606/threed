@@ -1,0 +1,53 @@
+@import '../../style/variable.scss';
+
+.accordion {
+    --bs-accordion-btn-padding-x: 0;
+    --bs-accordion-body-padding-x: 0;
+    --bs-accordion-btn-padding-y: 18px;
+
+    @include lg {
+        --bs-accordion-btn-padding-y: #{size(30)};
+    }
+
+
+
+    :global {
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .accordion {
+            &-item {
+                border-right: none;
+                border-left: none;
+            }
+
+            &-button {
+                font-size: 20px;
+
+                @include lg {
+                    font-size: size(30);
+                }
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+
+
+    }
+
+    :global(.accordion-button) {
+        &:not(&:global(.collapsed)) {
+            color: inherit;
+            background-color: transparent;
+            box-shadow: none;
+
+            .icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

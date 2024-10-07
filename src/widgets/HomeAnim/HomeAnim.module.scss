@@ -1,0 +1,125 @@
+@import '../../style/variable.scss';
+
+.title {
+    font-size: 28px;
+    line-height: 1.3;
+    color: #000000;
+
+    @include lg {
+        font-size: size(52);
+    }
+
+    span {
+        opacity: 0.2;
+    }
+} 
+
+.section {
+    overflow: hidden;
+    position: relative;
+}
+
+.col_left {
+    background-color: #D0F491;
+   padding: 80px 20px 50px;
+   min-height: 60vh;
+    @include lg {
+        min-height: 100vh;
+        padding-left: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-right: 50px;
+    }
+}
+
+.col_right {
+    background-color: #884AFF;
+    padding: 50px 20px ;
+    min-height: 40vh;
+    @include lg {
+        min-height: 100vh;
+        padding-right: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+    }
+}
+
+
+
+.img {
+    --bs-aspect-ratio: 110.7%;
+    will-change: transform;
+}
+
+
+.item {
+    font-size: 16px;
+    padding: 5px 15px;
+    @include lg {
+        font-size: 22px;
+    padding: 9px 30px;
+    }
+    &:nth-of-type(1) {
+        background-color: #F1ADC0;
+    }
+    &:nth-of-type(2) {
+        background-color: #FF80C5;
+    }
+    &:nth-of-type(3) {
+        background-color: #EBD28D;
+    }
+    &:nth-of-type(4) {
+        background-color: #DDEBCA;
+    }
+    &:nth-of-type(5) {
+        background-color: #EAD275;
+    }
+    &:nth-of-type(6) {
+        background-color: #F1ADC0;
+    }
+    &:nth-of-type(7) {
+        background-color: #FF80C5;
+    }&:nth-of-type(8) {
+        background-color: #F1ADC0;
+    }
+    &:nth-of-type(9) {
+        background-color: #FF80C5;
+    }
+    &:nth-of-type(10) {
+        background-color: #EBD28D;
+    }
+    &:nth-of-type(11) {
+        background-color: #DDEBCA;
+    }
+    &:nth-of-type(12) {
+        background-color: #EAD275;
+    }
+    &:nth-of-type(13) {
+        background-color: #F1ADC0;
+    }
+    &:nth-of-type(14) {
+        background-color: #FF80C5;
+    }
+
+    &_wrap {
+        will-change: transform;
+    }
+}
+
+
+.pf_sm {
+    width: 55px;
+
+    @include lg {
+        width: size(150);
+
+    }
+    @include xl {
+        width: size(210);
+    }
+
+    &:not(:first-of-type) {
+        margin-left: -9%;
+    }
+}

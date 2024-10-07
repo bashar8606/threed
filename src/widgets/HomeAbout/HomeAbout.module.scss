@@ -1,0 +1,37 @@
+@import "../../style/variable.scss";
+
+.section {
+  padding: size(60) 0;
+  @include lg {
+    padding: 100px 0;
+  }
+}
+.cover {
+    max-width: 420px;
+  &_img {
+    --bs-aspect-ratio: 124%;
+    mask-image: url("/assets/images/mask1.svg");
+    mask-size: 100%;
+    -webkit-mask-image: url("/assets/images/mask1.svg");
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}
+
+
+.title {
+    margin-bottom: 30px;
+    @include lg {
+        margin-bottom: size(60);
+    }
+}
+
+.list {
+    &_item {
+        padding: 10px 0;
+        border-bottom: 1px solid $grey;
+        color: #9CA8BB;
+    }
+}
