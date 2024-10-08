@@ -1,6 +1,8 @@
 @import '../../style/variable.scss';
 
 .header {
+    background-color: rgb(4 10 17 / 57%);
+    backdrop-filter: blur(6px);
     .nav_item {
         position: relative;
         &::before {
