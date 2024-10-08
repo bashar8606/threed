@@ -65,5 +65,8 @@
 }
 
 .card{
-  border-radius: 30px;
+  border-radius: 16px;
+  @include lg {
+    border-radius: 30px;
+  }
 }

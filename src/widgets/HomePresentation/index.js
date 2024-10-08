@@ -15,12 +15,12 @@ const HomePresentation = ({ data }) => {
         <div className="position-relative">
           <div className={`${style.line} `}>
             <div className={`d-flex align-items-center ${style.line_item}`}>
-              <h3 className={`${style.title} text-uppercase fw-700 h1 text-grey lh-1 mb-0`}>Product</h3>
+              <h3 className={`${style.title} ff-secondary text-uppercase fw-700 h1 text-grey lh-1 mb-0`}>Product</h3>
             </div>
             <div className={style.line_item}></div>
             <div className={style.line_item}></div>
             <div className={`text-end ${style.line_item}  d-flex align-items-center justify-content-end`}>
-              <h3 className={`text-uppercase fw-700 h1 text-grey ${style.title}  lh-1 mb-0`}>Detail</h3>
+              <h3 className={`text-uppercase fw-700 h1 text-grey ${style.title} ff-secondary  lh-1 mb-0`}>Detail</h3>
             </div>
           </div>
 

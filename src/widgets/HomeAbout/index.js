@@ -10,7 +10,7 @@ const HomeAbout = ({ data }) => {
 
   return (
     <section
-      className={`${style.section} bg-secondary  position-relative`}
+      className={`${style.section} bg-secondary overflow-hidden position-relative`}
       ref={main}
     >
       <div className="container">
@@ -21,7 +21,7 @@ const HomeAbout = ({ data }) => {
             </h2>
           </div>
           <div className="col-lg-5 order-3 order-lg-2">
-            <h3 className={`${style.title} h2 fw-400 text-white`}>
+            <h3 className={`${style.title} h2 fw-400 text-white ff-secondary`}>
               Imaginations Engineered Trust Delivered.
             </h3>
 
@@ -35,7 +35,21 @@ const HomeAbout = ({ data }) => {
 
           </div>
           <div className="col-lg-5 order-1 order-lg-3">
-            <div className={`ms-lg-auto ${style.cover} mb-4 mb-lg-0`}>
+            <div className={`ms-lg-auto ${style.cover} position-relative mb-4 mb-lg-0`}>
+              <div className={`${style.shape} ratio position-absolute`}>
+                <Image
+                  src={"/assets/images/shape2.png"}
+                  priority={true}
+                  fill
+                  className="object-fit-cover"
+                  sizes="90vw"
+                  quality={90}
+                  alt={`decor`}
+                />
+              </div>
+
+
+
               <div className={`ratio ${style.cover_img}`}>
                 <Image
                   src={"/assets/images/banner1.png"}

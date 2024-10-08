@@ -24,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={fontPrimary.variable}>
+      <body className={`${fontPrimary.variable} ${fontSecondary.variable}`} >
         <GlobalProviders>
           <Header />
           {children}

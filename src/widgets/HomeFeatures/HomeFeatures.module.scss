@@ -2,10 +2,12 @@
 
 .section {
   padding: size(60) 0;
+
   @include lg {
     padding: 100px 0;
   }
 }
+
 .cover {
   &_img {
     --bs-aspect-ratio: 72.5%;
@@ -15,16 +17,20 @@
 
 .title {
   margin-bottom: 30px;
+
   @include lg {
     margin-bottom: size(60);
   }
 }
+
 .stroke {
   pointer-events: none;
 }
+
 .card {
   padding: 15px;
   cursor: pointer;
+
   &_icon {
     flex: 0 0 auto;
     width: 56px;
@@ -35,9 +41,20 @@
   .round {
     --size: 26px;
     width: var(--size);
-    height:  var(--size);
+    height: var(--size);
     z-index: 1;
     bottom: -2%;
     right: 1%;
   }
+}
+
+
+.shape {
+  --bs-aspect-ratio: 61%;
+  width: 121%;
+  left: -27%;
+  top: 0%;
+  transform: rotate(324deg);
+  filter: blur(5px);
+  opacity: 0.4;
 }

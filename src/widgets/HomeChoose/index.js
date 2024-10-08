@@ -23,7 +23,7 @@ const HomeChoose = ({ data }) => {
             </h2>
           </div>
           <div className="col-lg-5 ">
-            <h3 className={`${style.title} h3 fw-400 text-white`}>
+            <h3 className={`${style.title} h3 fw-400 text-white ff-secondary`}>
               What’s that made us different
             </h3>
           </div>

@@ -4,6 +4,7 @@ import style from "./HomeBanner.module.scss";
 import { useHomeBanner } from "./useHomeBanner";
 import MetaBox from "@/components/MetaBox";
 import BuyNow from "@/components/BuyNow";
+import Link from "next/link";
 
 const HomeBanner = ({ data }) => {
   const { main, width } = useHomeBanner({ style });
@@ -59,7 +60,7 @@ const HomeBanner = ({ data }) => {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row justify-content-between align-items-end">
             <div className={`col-lg-3 `}>
               <h3 className={`${style.fade} title-md text-white`}>Reality Perfected</h3>
               <p className={`${style.fade} text-light title-md`}>
@@ -106,9 +107,16 @@ const HomeBanner = ({ data }) => {
                 </p>
               </div>
 
-              <div className={`mt-3 mt-lg-4 ${style.fade}`}>
+              <div className={`mt-4 mt-lg-4 ${style.fade}`}>
                 <BuyNow />
               </div>
+            </div>
+            <div className="col-lg-3 d-none d-lg-block ">
+              <Link href="/" className={`${style.fade} ${style.link}`}>
+                  <p className="text-white"> The Future,<br/> Visually Your</p>
+                  <span></span>
+              </Link>
+             
             </div>
           </div>
         </div>

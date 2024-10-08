@@ -31,24 +31,16 @@
         }
     }
 
-    .title {
-        font-size: 16px;
-
-        @include lg {
-            font-size: size(20);
-        }
-    }
+    
 
     .nav {
         &_link {
-            color: #a4a4a4;
-            font-size: 14px;
+            color: #9CA8BB;
             transition: 0.3s all ease;
             display: block;
             padding: 5px 0;
 
             @include lg {
-                font-size: 1rem;
                 padding: size(5) 0;
             }
 

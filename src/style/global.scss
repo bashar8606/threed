@@ -149,6 +149,9 @@ html.lenis {
 .ff-primary {
     font-family: var(--ff-primary) !important;
 }
+.ff-secondary {
+    font-family: var(--ff-secondary) !important;
+}
 
 
 
@@ -231,9 +234,9 @@ ul {
 }
 
 .h3 {
-    font-size: 22px;
+    font-size: 34px;
     @include lg {
-        font-size: 1.6rem;
+        font-size:  size(52);
     }
     @include xl {
         font-size: size(64);

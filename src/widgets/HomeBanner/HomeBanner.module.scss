@@ -1,7 +1,7 @@
 @import "../../style/variable.scss";
 
 .section {
-  padding: 100px 0 60px;
+  padding: 60px 0 30px;
   min-height: 100svh;
 
   @include lg {
@@ -81,4 +81,8 @@
 .shape {
   opacity: 0;
   will-change: transform, opacity;
+}
+
+.link {
+
 }

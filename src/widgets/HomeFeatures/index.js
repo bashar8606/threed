@@ -12,13 +12,13 @@ const HomeFeatures = ({ data }) => {
 
   return (
     <section
-      className={`${style.section} bg-secondary  position-relative`}
+      className={`${style.section} bg-secondary overflow-hidden  position-relative`}
       ref={main}
     >
       <div className="container">
         <div className="row justify-content-between align-items-center">
           <div className="col-lg-4 ">
-            <h3 className={`${style.title} h4 fw-400 text-white`}>
+            <h3 className={`${style.title} ff-secondary h4 fw-400 text-white`}>
               Beyond the Screen
             </h3>
             <p className="text-light title-md">
@@ -40,7 +40,7 @@ const HomeFeatures = ({ data }) => {
                       priority={true}
                       fill
                       sizes="50vw"
-                       className={style.stroke}
+                      className={style.stroke}
                       quality={90}
                       alt={``}
                     />
@@ -66,7 +66,20 @@ const HomeFeatures = ({ data }) => {
             </div>
           </div>
 
-          <div className="col-lg-6">
+          <div className="col-lg-6 position-relative">
+            <div className={`${style.shape} ratio position-absolute`}>
+              <Image
+                src={"/assets/images/shape2.png"}
+                priority={true}
+                fill
+                className="object-fit-cover"
+                sizes="90vw"
+                quality={90}
+                alt={`decor`}
+              />
+            </div>
+
+
             <div className={`ratio ${style.cover_img} overflow-hidden`}>
               <Image
                 src={"/assets/images/banner1.png"}
