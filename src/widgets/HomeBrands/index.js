@@ -1,9 +1,7 @@
 "use client";
 import style from "./HomeBrands.module.scss";
 import { useHomeBrands } from "./useHomeBrands";
-import SpecCard from "@/components/SpecCard";
 import Image from "next/image";
-import Link from "next/link";
 import Slider from "@/components/Slider";
 import { SwiperSlide } from "swiper/react";
 

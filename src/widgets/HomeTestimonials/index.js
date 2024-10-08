@@ -20,10 +20,10 @@ const HomeTestimonials = ({ data }) => {
    
     breakpoints: {
       640: {
-        spaceBetween: 4,
+        spaceBetween: 2,
       },
       768: {
-        slidesPerView: 5,
+        slidesPerView: 2,
       },
       992: {
         slidesPerView: 2,

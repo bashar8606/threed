@@ -28,7 +28,7 @@ const HomeChoose = ({ data }) => {
             </h3>
           </div>
         </div>
-        <div className={`row row-cols-lg-3 gx-lg-3 gx-xl-4 ${style.card_wrap}`}>
+        <div className={`row row-cols-md-3 row-cols-lg-3 gx-lg-3 gx-xl-4 ${style.card_wrap}`}>
           {cards?.map((item, i)=>{
             return(
               <div key={i}>
