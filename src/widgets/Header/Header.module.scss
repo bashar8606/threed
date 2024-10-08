@@ -1,6 +1,29 @@
 @import '../../style/variable.scss';
 
 .header {
+    .nav_item {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            height: 15px;
+            width: 1px;
+            background-color: #fff;
+            top: 50%;
+            transform: translateY(-50%);
+            display: none;
+            @include lg {
+                display: block;
+            }
+        }
+        &:last-of-type {
+            &::before {
+                display: none;
+            }
+        }
+
+    }
     &_toggle {
         span {
             width: 26px;
@@ -41,6 +64,9 @@
                 --bs-nav-link-font-weight: 400;
                 --bs-nav-link-font-size: 14px;
                 --bs-navbar-nav-link-padding-x: 20px;
+                @include lg {
+                    --bs-navbar-nav-link-padding-x: 30px;
+                }
             }
         }
     }
@@ -74,10 +100,15 @@
 
 .search {
     background-color: #0B1420;
-
+    max-width: 180px;
     input {
         color: #fff;
-box-shadow: none;
+        box-shadow: none;
+        &:focus {
+            color: #fff;
+            box-shadow: none;
+        }
+
         &::placeholder {
             color: #ffffff;
         }

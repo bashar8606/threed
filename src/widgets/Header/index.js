@@ -20,7 +20,7 @@ function Header() {
 
     return (
         <header className={`${style.header} fixed-top `} ref={main}>
-            <Navbar onSelect={(e)=>{console.log(e,"logged")}} expand={"xl"} variant="light" className="">
+            <Navbar onSelect={(e) => { console.log(e, "logged") }} expand={"xl"} variant="light" className="">
                 <Container>
 
                     <Link href="/" className='navbar-brand'>
@@ -39,7 +39,7 @@ function Header() {
                         placement="start"
                         show={showOffcanvas}
                         onHide={handleClose1}
-                        
+
                     >
                         <Offcanvas.Header closeButton>
                             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-xl`}>
@@ -52,15 +52,15 @@ function Header() {
                             <Nav className="ms-auto pe-xl-3 align-items-xl-center h-100">
                                 {data?.map((item, i) => {
                                     return (
-                                        <Link key={i} href={`${item?.url}`} className='nav-link' onClick={handleClose1}>{`${item?.label}`}</Link>
+                                        <Link key={i} href={`${item?.url}`} className={`nav-link ${style.nav_item}`} onClick={handleClose1}>{`${item?.label}`}</Link>
                                     )
                                 })}
                             </Nav>
                             <Nav className="ms-auto pe-xl-3 align-items-xl-center h-100 d-none d-lg-flex">
-                                <div className={`${style.search} d-flex rounded-pill`}><input type="text" placeholder="Search" aria-label="search"   className="form-control title-xs bg-transparent border-0"/> <button  className='btn text-white btn-transparent rounded-pill ' >
-<GrSearch /><span className="visually-hidden">Search</span></button></div>
-                              
-                                <Link className='nav-link h6 mb-0 pe-0' aria-label="Cart"  href={'/'}><MdOutlineShoppingCart /><span className="visually-hidden">Cart</span></Link>
+                                <div className={`${style.search} d-flex rounded-pill`}><input type="text" placeholder="Search" aria-label="search" className="form-control title-xs bg-transparent border-0" /> <button className='btn ps-1 pe-2 text-white btn-transparent rounded-pill ' >
+                                    <GrSearch /><span className="visually-hidden">Search</span></button></div>
+
+                                <Link className='nav-link h6 mb-0 ps-2 pe-0' aria-label="Cart" href={'/'}><MdOutlineShoppingCart /><span className="visually-hidden">Cart</span></Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
@@ -86,7 +86,7 @@ const data = [
     }, {
         label: "Services",
         url: "#features"
-    },{
+    }, {
         label: "Contact ",
         url: "#learn"
     },
