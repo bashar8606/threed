@@ -1,11 +1,7 @@
 "use client";
 import style from "./HomeVideo.module.scss";
 import { useHomeVideo } from "./useHomeVideo";
-import SpecCard from "@/components/SpecCard";
-import Slider from "@/components/Slider";
-import { SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import Link from "next/link";
 
 const HomeVideo = ({ data }) => {
   const { main, videoRef } = useHomeVideo({ style });
@@ -52,7 +48,7 @@ const HomeVideo = ({ data }) => {
             ref={videoRef}
             muted
             // autoPlay
-            // playsInline
+            playsInline
             className="object-fit-cover position-absolute top-0 start-0 w-100 h-100"
             src="/assets/video.mp4">
           </video>

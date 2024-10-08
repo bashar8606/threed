@@ -1,7 +1,7 @@
 @import "../../style/variable.scss";
 
 .section {
-  padding: size(60) 0;
+  padding: 0;
   overflow: hidden;
   @include lg {
     padding: 100px 0;
