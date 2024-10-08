@@ -1,11 +1,13 @@
 @import "../../style/variable.scss";
 
 .section {
+
   padding: 60px 0 30px;
   min-height: 100svh;
 
   @include lg {
     min-height: 100vh;
+    padding: 90px 0 30px;
   }
 
   :global(.container) {
