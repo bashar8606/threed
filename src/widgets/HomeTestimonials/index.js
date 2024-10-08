@@ -77,28 +77,28 @@ const datas = [
   {
     name: "Mario M.",
     text: "Incredible immersion! The AI-driven environments and personalized storylines make every game a unique adventure. It's like stepping into another world!",
-    img: "/assets/images/banner1.png",
+    img: "/assets/images/av1.png",
     star: "4.9"
   },
   {
     name: "Emily R.",
     text: "This VR stands out with its hyper-realistic graphics and advanced motion tracking. The voice and gesture controls are intuitive and seamless.",
-    img: "/assets/images/banner1.png",
+    img: "/assets/images/av2.png",
     star: "4.9"
   }, {
     name: "Rina S.",
     text: "Incredible immersion! The AI-driven environments and personalized storylines make every game a unique adventure. It's like stepping into another world!",
-    img: "/assets/images/banner1.png",
+    img: "/assets/images/av3.png",
     star: "4.9"
   }, {
     name: "Mario M.",
     text: "Incredible immersion! The AI-driven environments and personalized storylines make every game a unique adventure. It's like stepping into another world!",
-    img: "/assets/images/banner1.png",
+    img: "/assets/images/av4.png",
     star: "4.9"
   }, {
     name: "Mario M.",
     text: "Incredible immersion! The AI-driven environments and personalized storylines make every game a unique adventure. It's like stepping into another world!",
-    img: "/assets/images/banner1.png",
+    img: "/assets/images/av2.png",
     star: "4.9"
   },
 ];

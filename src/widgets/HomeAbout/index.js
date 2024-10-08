@@ -52,13 +52,13 @@ const HomeAbout = ({ data }) => {
 
               <div className={`ratio ${style.cover_img}`}>
                 <Image
-                  src={"/assets/images/banner1.png"}
+                  src={"/assets/images/bg2.png"}
                   priority={true}
                   fill
                   className="object-fit-cover"
                   sizes="50vw"
                   quality={90}
-                  alt={`a girl wearing a VR Box`}
+                  alt={`a man and boy wearing  VR Boxes`}
                 />
               </div>
             </div>
