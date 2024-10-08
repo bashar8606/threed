@@ -16,6 +16,7 @@ const HomeBanner = ({ data }) => {
           <Image
             src={"/assets/images/shape-ellipse.png"}
             fill
+            sizes="50vw"
             alt="decor image shapes"
           />
         </div>
@@ -34,7 +35,7 @@ const HomeBanner = ({ data }) => {
                         {faculties?.data?.map((item, i) => {
                           return (
                             <div key={i} className={`${style.pf_sm} d-inline-block rounded-circle overflow-hidden bg-light  ratio ratio-1x1`}>
-                              <Image src={`${item?.url}`} priority={true} fill className="object-fit-cover" alt={`${item?.alt}`} />
+                              <Image src={`${item?.url}`} priority={true} sizes="40vw" fill className="object-fit-cover" alt={`${item?.alt}`} />
                             </div>
                           )
                         })}

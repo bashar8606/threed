@@ -11,16 +11,6 @@ export const useMetaBox = ({ style }) => {
   const { width } = useGetDeviceType();
   useLayoutEffect(() => {
     const ctx = gsap.context((self) => {
-      // const fade = self.selector(`.${style.fade}`)
-      // const globe = self.selector(`.${style.globe}`)
-      // const p1 = self.selector(`.${style.p1}`)
-      // const p2 = self.selector(`.${style.p2}`)
-
-      // gsap.set(fade, { y: 80, filter: `blur(5px)`, autoAlpha: 0 })
-      // gsap.set(globe, { rotate: -30, yPercent: 30, autoAlpha: 0 })
-      // gsap.set(p1, { scale:0.8, autoAlpha: 0, transformOrigin:"left bottom" })
-      // gsap.set(p2, { scale:0.8, autoAlpha: 0, transformOrigin:"right bottom"  })
-
       const tl = gsap.timeline({ repeat: 0, paused: true });
       tl.to(
         model?.rotation,
@@ -29,7 +19,7 @@ export const useMetaBox = ({ style }) => {
       ).play(0);
 
       ScrollTrigger.matchMedia({
-        "(min-width: 992px)": function () {},
+        "(min-width: 992px)": function () { },
 
         "(min-width: 600px) and (max-width: 959px)": function () {
           // The ScrollTriggers created inside these functions are segregated and get
@@ -43,7 +33,7 @@ export const useMetaBox = ({ style }) => {
         },
 
         // all
-        all: function () {},
+        all: function () { },
       });
     }, main);
 
