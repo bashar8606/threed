@@ -12,7 +12,7 @@ function Footer() {
                     <Subscribe style={style} />
                     <div className="row gy-3 gy-lg-0 justify-content-lg-between">
                         <div className="col-lg-4">
-                            <h3 className='text-primary fw-600 h5 mb-3 mb-lg-4 '>Aetheria</h3>
+                            <h3 className='text-primary fw-600 h5 mb-3 mb-lg-4 ff-secondary'>Aetheria</h3>
                             <p className='title-md text-light'>Our VR technology with AI transforms your perception, making the impossible possible. Discover worlds beyond imagination and redefine your reality.</p>
 
                             <ul className={`${style.social} mt-3 mt-lg-4 row gx-2`}>
