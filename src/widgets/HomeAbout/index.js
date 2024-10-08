@@ -3,8 +3,7 @@ import style from "./HomeAbout.module.scss";
 import { useHomeAbout } from "./useHomeAbout";
 import Image from "next/image";
 import Link from "next/link";
-import { MdArrowOutward } from "react-icons/md";
-
+import { MdArrowOutward, MdKeyboardArrowRight } from "react-icons/md";
 const HomeAbout = ({ data }) => {
   const { main } = useHomeAbout({ style });
 
@@ -47,6 +46,9 @@ const HomeAbout = ({ data }) => {
                   alt={`decor`}
                 />
               </div>
+
+              <span class={`${style.cover_label} rounded-pill border border-white d-inline-block fw-300 title-md mb-2 text-white px-3 py-1 position-absolute`}>AI Health</span>
+              <span class={`${style.cover_arrow}  d-inline-block  h4 text-white position-absolute`}><MdKeyboardArrowRight/></span>
 
 
 
