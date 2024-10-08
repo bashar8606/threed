@@ -10,8 +10,8 @@ export default function Subscribe({ style }) {
 
       <div className="col-lg-4">
         <div className="input-group  ">
-          <input className='form-control bg-transparent border-light rounded-3 text-white title-sm' id="email" name="email" type="email" placeholder="name@example.com" />
-          <button type="submit" className={`btn btn-primary ms-2 rounded-3 text-white fw-600 title-sm `} >
+          <input className='form-control bg-transparent border-light rounded-5 text-white title-sm' id="email" name="email" type="email" placeholder="name@example.com" />
+          <button type="submit" className={`btn btn-primary ms-2 rounded-5 text-white fw-600 title-sm `} >
             Subscribe</button>
         </div>
       </div>

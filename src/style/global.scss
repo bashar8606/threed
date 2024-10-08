@@ -267,6 +267,10 @@ ul {
     }
 }
 
+.rounded-5 {
+    border-radius: 8px !important;
+}
+
 .fw-700 {
     font-weight: 700 !important;
 }
@@ -364,34 +368,3 @@ ul {
   
 }
 
-
-.form-floating > label {
-    padding: 0.8rem 0.75rem;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.form-floating > .form-control, .form-floating > .form-control-plaintext, .form-floating > .form-select {
-    height: calc(3rem + calc(var(--bs-border-width) * 2));
-    min-height: calc(3rem + calc(var(--bs-border-width) * 2));
-    line-height: 1.25;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.text-transparent {
-    color: transparent !important;
-}
-
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: #fff !important;
-}
-
-.form-floating > .form-control:focus ~ label::after, .form-floating > .form-control:not(:placeholder-shown) ~ label::after, .form-floating > .form-control-plaintext ~ label::after, .form-floating > .form-select ~ label::after {
-    background-color: transparent;
-}

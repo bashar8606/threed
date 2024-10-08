@@ -1,7 +1,6 @@
 @import "../../style/variable.scss";
 
 .section {
-
   padding: 60px 0 30px;
   min-height: 100svh;
 
@@ -37,7 +36,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-
+  clip-path: inset(0% 6% 6% 6% round 30px);
   @include lg {
     top: initial;
     bottom: 0;
@@ -48,7 +47,6 @@
   --bs-aspect-ratio: 16%;
 }
 
-
 .card {
   &_icon {
     --size: 32px;
@@ -57,7 +55,6 @@
   }
 }
 
-
 .pf_sm {
   width: 35px;
   // opacity: 0;
@@ -65,13 +62,11 @@
 
   @include lg {
     width: size(50);
-
   }
 
   &:not(:first-of-type) {
     margin-left: -9%;
   }
-
 }
 
 .pf_wrap {
@@ -85,5 +80,13 @@
 }
 
 .link {
-
+  p {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+  span{
+    width: 67px;
+    height: 67px;
+    font-size: 18px;
+  }
 }
