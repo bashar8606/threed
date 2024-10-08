@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import style from "./Footer.module.scss"
-import { IoCallOutline, IoMailOutline } from "react-icons/io5";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import Subscribe from './Subscribe';
 
@@ -42,10 +41,10 @@ function Footer() {
                                 <div>
                                     <h3 className={`${style.title} mb-2 mb-lg-3 title-md text-white fw-600 ff-secondary `}>Support</h3>
                                     <ul className={`ps-0 mb-0 ${style.nav}`}>
-                                        {data?.map((item, i) => {
+                                        {data1?.map((item, i) => {
                                             return (
                                                 <li key={i}>
-                                                    <a className={`title-md ${style.nav_link}`} href={`${item?.url}`}>{item?.label}</a>
+                                                    <Link className={`title-md ${style.nav_link}`} href={`${item?.url}`}>{item?.label}</Link>
                                                 </li>
                                             )
                                         })}
@@ -54,10 +53,10 @@ function Footer() {
                                 <div>
                                     <h3 className={`${style.title} mb-2 mb-lg-3 title-md text-white fw-600 ff-secondary `}>Company</h3>
                                     <ul className={`ps-0 mb-0 ${style.nav}`}>
-                                        {data?.map((item, i) => {
+                                        {data2?.map((item, i) => {
                                             return (
                                                 <li key={i}>
-                                                    <a className={`title-md ${style.nav_link}`} href={`${item?.url}`}>{item?.label}</a>
+                                                    <Link className={`title-md ${style.nav_link}`} href={`${item?.url}`}>{item?.label}</Link>
                                                 </li>
                                             )
                                         })}
@@ -68,10 +67,10 @@ function Footer() {
                                 <div>
                                     <h3 className={`${style.title} mb-2 mb-lg-3 title-md text-white fw-600 ff-secondary `}>Legal</h3>
                                     <ul className={`ps-0 mb-0 ${style.nav}`}>
-                                        {data?.map((item, i) => {
+                                        {data3?.map((item, i) => {
                                             return (
                                                 <li key={i}>
-                                                    <a className={`title-md ${style.nav_link}`} href={`${item?.url}`}>{item?.label}</a>
+                                                    <Link className={`title-md ${style.nav_link}`} href={`${item?.url}`}>{item?.label}</Link>
                                                 </li>
                                             )
                                         })}
@@ -93,15 +92,34 @@ function Footer() {
 }
 
 export default Footer;
-const data = [
+const data1 = [
     {
-        label: "Home",
+        label: "Documentation",
         url: "#"
     }, {
+        label: "Contact",
+        url: "#about"
+    }
+]
+
+const data2 = [
+    {
         label: "About Us",
+        url: "#"
+    }, {
+        label: "Partner",
+        url: "#about"
+    },
+]
+const data3 = [
+    {
+        label: "Privacy",
+        url: "#"
+    }, {
+        label: "Terms",
         url: "#about"
     }, {
-        label: "What We Offer",
+        label: "Partners",
         url: "#whatweoffer"
     },
 ]
