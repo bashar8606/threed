@@ -1,0 +1,18 @@
+@import "../../style/variable.scss";
+
+.btn {
+  --bg: #fff;
+  --color: #000;
+
+  &_label {
+    background-color: var(--bg);
+    color: var(--color);
+    padding: 12px 17px;
+  }
+
+  &_icon {
+    background-color: var(--bg);
+    color: var(--color);
+    padding: 10px 10px;
+  }
+}

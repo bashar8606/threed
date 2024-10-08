@@ -55,9 +55,11 @@ const HomeTestimonials = ({ data }) => {
       ref={main}
     >
       <div className="container">
+        <div className="col-lg-7">
       <h3 className={`${style.title} h2 fw-400 text-white`}>
             What our customers are saying
             </h3>
+        </div>
 
 
         <Slider className={""} customSettings={customSettings} >
