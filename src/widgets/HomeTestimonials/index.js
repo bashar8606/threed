@@ -1,12 +1,9 @@
 "use client";
 import style from "./HomeTestimonials.module.scss";
 import { useHomeTestimonials } from "./useHomeTestimonials";
-import SpecCard from "@/components/SpecCard";
-import Image from "next/image";
-import Link from "next/link";
 import Slider from "@/components/Slider";
 import { SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination, Navigation, Grid } from 'swiper/modules';
+import SwiperCore, {  Grid } from 'swiper/modules';
 import "swiper/css/grid";
 import TestimonialCard from "@/components/TestimonialCard";
 
@@ -43,6 +40,7 @@ const HomeTestimonials = ({ data }) => {
   };
 
 
+
   return (
     <section
       className={`${style.section} bg-secondary  position-relative`}
@@ -56,7 +54,7 @@ const HomeTestimonials = ({ data }) => {
         </div>
 
 
-        <Slider className={""} customSettings={customSettings} >
+        <Slider className={""}   customSettings={customSettings} >
           {datas?.map((item, i) => {
             return (
               <SwiperSlide key={i}>
@@ -74,7 +72,33 @@ const HomeTestimonials = ({ data }) => {
 export default HomeTestimonials;
 
 const datas = [
+    {
+    name: "Mario M.",
+    text: "Incredible immersion! The AI-driven environments and personalized storylines make every game a unique adventure. It's like stepping into another world!",
+    img: "/assets/images/av1.png",
+    star: "4.9"
+  },
   {
+    name: "Emily R.",
+    text: "This VR stands out with its hyper-realistic graphics and advanced motion tracking. The voice and gesture controls are intuitive and seamless.",
+    img: "/assets/images/av2.png",
+    star: "4.9"
+  }, {
+    name: "Rina S.",
+    text: "Incredible immersion! The AI-driven environments and personalized storylines make every game a unique adventure. It's like stepping into another world!",
+    img: "/assets/images/av3.png",
+    star: "4.9"
+  }, {
+    name: "Mario M.",
+    text: "Incredible immersion! The AI-driven environments and personalized storylines make every game a unique adventure. It's like stepping into another world!",
+    img: "/assets/images/av4.png",
+    star: "4.9"
+  }, {
+    name: "Mario M.",
+    text: "Incredible immersion! The AI-driven environments and personalized storylines make every game a unique adventure. It's like stepping into another world!",
+    img: "/assets/images/av2.png",
+    star: "4.9"
+  },{
     name: "Mario M.",
     text: "Incredible immersion! The AI-driven environments and personalized storylines make every game a unique adventure. It's like stepping into another world!",
     img: "/assets/images/av1.png",
