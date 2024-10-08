@@ -17,8 +17,8 @@ const fontSecondary = Almarai({
   weight: ['300', '400', '700', '800']
 })
 export const metadata = {
-  title: 'Three JS',
-  description: 'sdsd',
+  title: 'Aetheria | Landing page',
+  description: 'Dive into a visually stunning future with our AI-powered VR. Personalized experiences that push the boundaries of what is possible.',
 }
 
 export default function RootLayout({ children }) {

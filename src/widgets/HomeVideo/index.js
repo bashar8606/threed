@@ -66,26 +66,26 @@ const HomeVideo = ({ data }) => {
 										</video>
         </div>
 
-        <div className={`row ${style.card_wrap} align-items-center`}>
-          <div className="col-lg-3">
+        <div className={`row ${style.card_wrap} align-items-center g-2 g-md-3`}>
+          <div className="col-6 col-md-4 col-lg-3">
             <div className={`bg-grey p-5 text-center ${style.card}`}>
               <h4 className="h4 text-white fw-600">4K</h4>
               <p className="title-xs text-light">Resolution </p>
             </div>
           </div>
-          <div className="col-lg-3">
+          <div className="col-6 col-md-4 col-lg-3">
           <div className={`bg-grey p-5 text-center ${style.card}`}>
               <h4 className="h4 text-white fw-600">120Hz</h4>
               <p className="title-xs text-light">refresh rate </p>
             </div>
           </div>
-          <div className="col-lg-3">
+          <div className="col-6 col-md-4 col-lg-3">
           <div className={`bg-grey p-5 text-center ${style.card}`}>
               <h4 className="h4 text-white fw-600">AI</h4>
               <p className="title-xs text-light">Processor </p>
             </div>
           </div>
-          <div className="col-lg-3">
+          <div className="col-md-4 col-lg-3">
             <div>
               <h5 className="title-sm text-white">Smart Drones, Smarter Choices</h5>
               <p className="title-xs text-light">Elevate your aerial photography with cutting-edge AI technology.</p>

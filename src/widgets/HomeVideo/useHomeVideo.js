@@ -64,7 +64,7 @@ export const useHomeVideo = ({ style }) => {
           end: "bottom bottom",
         },
       });
-      tl1.to(video, { scale: 1 });
+      tl1.to(video, { scale: 1, transformOrigin:"top" });
 
       let tl2 = gsap.timeline({
         force3d: true,

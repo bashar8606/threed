@@ -1,0 +1,13 @@
+@import "../../style/variable.scss";
+
+.section {
+  padding: 30px 0;
+
+  @include lg {
+    padding: size(48) 0;
+  }
+}
+
+.brand {
+  --bs-aspect-ratio: 24%;
+}

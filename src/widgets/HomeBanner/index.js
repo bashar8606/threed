@@ -9,7 +9,7 @@ const HomeBanner = ({ data }) => {
   const { main, width } = useHomeBanner({ style });
 
   return (
-    <section className={`${style.section} bg-secondary  d-flex`} ref={main}>
+    <section className={`${style.section} bg-secondary position-relative  d-flex overflow-hidden`} ref={main}>
       <div className="container">
         <div className={`position-absolute ratio ${style.shape}`}>
           <Image
@@ -20,7 +20,7 @@ const HomeBanner = ({ data }) => {
         </div>
         <div className="d-flex flex-column justify-content-between h-100">
           <div>
-            <div className={`row justify-content-between align-items-end mb-lg-3 ${style.fade}`}>
+            <div className={`row justify-content-between align-items-end mb-1 mb-lg-3 ${style.fade}`}>
               <div className="col-auto text-white">
                 <div className="d-flex">
                   <div>
@@ -43,7 +43,7 @@ const HomeBanner = ({ data }) => {
                   </div>
                 </div>
               </div>
-              <div className="col-auto text-white text-md text-white fw-500 mb-0">
+              <div className="col-auto text-white title-md  fw-500 mb-0">
                 Beyond the Screen
               </div>
             </div>
@@ -106,7 +106,7 @@ const HomeBanner = ({ data }) => {
                 </p>
               </div>
 
-              <div className={`mt-lg-4 ${style.fade}`}>
+              <div className={`mt-3 mt-lg-4 ${style.fade}`}>
                 <BuyNow />
               </div>
             </div>
@@ -125,13 +125,13 @@ const faculties = {
   title: "",
   data: [
     {
-      url: "/assets/images/p1.png",
+      url: "/assets/images/img1.png",
       alt: ""
     }, {
-      url: "/assets/images/p2.png",
+      url: "/assets/images/img2.png",
       alt: ""
     }, {
-      url: "/assets/images/p3.png",
+      url: "/assets/images/img3.png",
       alt: ""
     }
   ]

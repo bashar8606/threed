@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const Slider = ({ children, customSettings, className }) => {
-  return <Swiper {...customSettings} pagination={true} className={`${className}`}>{children}</Swiper>;
+  return <Swiper  {...customSettings} pagination={true} className={`${className}`}>{children}</Swiper>;
 };
 
 export default Slider;

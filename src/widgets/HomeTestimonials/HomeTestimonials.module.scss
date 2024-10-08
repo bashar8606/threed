@@ -15,9 +15,14 @@
 
 .title {
   margin-bottom: 30px;
+  font-style: italic;
+  span {
+    font-style: normal;
+  }
   @include lg {
     margin-bottom: size(60);
   }
+  
 }
 .stroke {
   pointer-events: none;

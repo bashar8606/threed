@@ -2,6 +2,7 @@
 
 
 .section {
+    padding: 60px 0;
     @include lg {
         min-height: 100vh;
     }
@@ -10,7 +11,10 @@
 .line {
     &_item {
         border-bottom: 1px solid #17283E;
-        min-height: 125px;
+        min-height: 75px;
+        @include lg {
+            min-height: 125px;
+        }
         &:first-of-type {
             border-top: 1px solid #17283E;
         }
@@ -20,9 +24,12 @@
 .img {
     position: absolute;
     top: 50%;
-    width: 62%;
+    width: 92%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @include md {
+        width: 62%;
+    }
     &_banner {
         --bs-aspect-ratio: 60%;
         transform: rotate(-12deg);

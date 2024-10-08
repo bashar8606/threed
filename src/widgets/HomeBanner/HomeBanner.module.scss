@@ -16,10 +16,16 @@
 }
 
 .shape {
-  width: 80%;
+  width: 100%;
   --bs-aspect-ratio: 67%;
   z-index: 1;
   pointer-events: none;
+  top: 30%;
+  left: 0;
+  @include lg {
+    width: 80%;
+    top: 10%;
+  }
 }
 
 .model_wrap {
@@ -30,7 +36,7 @@
   transform: translateX(-50%) translateY(-50%);
   z-index: 2;
 
-  @include md {
+  @include lg {
     top: initial;
     transform: translateX(-50%);
     bottom: 0;

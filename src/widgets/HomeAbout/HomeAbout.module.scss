@@ -2,12 +2,15 @@
 
 .section {
   padding: size(60) 0;
+
   @include lg {
     padding: 100px 0;
   }
 }
+
 .cover {
-    max-width: 420px;
+  max-width: 420px;
+
   &_img {
     --bs-aspect-ratio: 124%;
     mask-image: url("/assets/images/mask1.svg");
@@ -22,16 +25,39 @@
 
 
 .title {
-    margin-bottom: 30px;
-    @include lg {
-        margin-bottom: size(60);
-    }
+  margin-bottom: 30px;
+
+  @include lg {
+    margin-bottom: size(60);
+  }
 }
 
 .list {
-    &_item {
-        padding: 10px 0;
-        border-bottom: 1px solid $grey;
-        color: #9CA8BB;
+  &_item {
+    padding: 10px 0;
+    border-bottom: 1px solid $grey;
+    color: #9CA8BB;
+    transition: 0.6s all ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $white;
+      display: block;
+      bottom: 0;
+      will-change: transform;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: 0.6s transform cubic-bezier(0.63, 0, 0.38, 0.99);
     }
+    &:hover {
+      color: #fff;
+      &::before {
+        transform: scaleX(1);
+      }
+    }
+  }
 }

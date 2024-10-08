@@ -6,9 +6,10 @@
             width: 26px;
             height: 2px;
             border-radius: 10rem;
-            background-color: #000000;
+            background-color: #ffffff;
             display: block;
             margin-bottom: 5px;
+
             @include md {
                 width: 30px;
             }
@@ -16,6 +17,7 @@
             &:last-of-type {
                 margin-bottom: 0;
                 width: 13px;
+
                 @include lg {
                     width: 15px;
 
@@ -27,6 +29,7 @@
     :global {
         .navbar {
             --bs-navbar-padding-y: 8px;
+
             @include lg {
                 --bs-navbar-padding-y: 14px;
 
@@ -34,7 +37,7 @@
 
             &-nav {
                 --bs-nav-link-color: #ffffff;
-                --bs-nav-link-hover-color:#777777;
+                --bs-nav-link-hover-color: #777777;
                 --bs-nav-link-font-weight: 400;
                 --bs-nav-link-font-size: 14px;
                 --bs-navbar-nav-link-padding-x: 20px;
@@ -47,7 +50,8 @@
 
 .logo {
     --bs-aspect-ratio: 17.5%;
-    width: 150px;
+    width: 90px;
+
     @include lg {
         width: 91px;
     }
@@ -64,5 +68,18 @@
     :global(.dropdown-toggle) {
         display: flex;
         align-items: center;
+    }
+}
+
+
+.search {
+    background-color: #0B1420;
+
+    input {
+        color: #fff;
+box-shadow: none;
+        &::placeholder {
+            color: #ffffff;
+        }
     }
 }

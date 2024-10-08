@@ -3,27 +3,34 @@
 .card {
   --bg: rgba(0, 0, 0, 0);
   background-color: var(--bg);
-  border-radius: 20px;
-  padding: 22px 20px 33px;
-  border: 1px solid transparent;
+  border-radius: 0px;
+  padding: 22px 0px 33px;
+  border-bottom: 1px solid $light;
   transition: 0.5s all ease;
   transform: translateY(0);
 
-  @include lg {
+  @include md {
     border-radius: size(34);
     padding: size(30) size(26) size(30);
+    border: 1px solid transparent;
   }
   .title {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     font-style: italic;
     line-height: 1.5;
-    max-width: 200px;
+        max-width: 205px;
+    @include lg {
+      margin-bottom: size(32);
+    }
   }
 
   &:hover {
     --bg: rgba(0, 0, 0, 0.058);
-    border-color: $light;
-    transform: translateY(-10%);
+  
+    @include lg {
+      border-color: $light;
+      transform: translateY(-10%);
+    }
 
   }
 }

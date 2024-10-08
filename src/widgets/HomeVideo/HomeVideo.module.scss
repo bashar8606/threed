@@ -21,7 +21,10 @@
   }
 }
 .title_wrap {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  @include lg {
+    margin-bottom: 100px;
+  }
 }
 
 .title {

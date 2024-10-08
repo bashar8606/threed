@@ -1,0 +1,33 @@
+@import "../../style/variable.scss";
+
+.card {
+  --bg: rgba(0, 0, 0, 0);
+  background-color: var(--bg);
+  border-radius: 14px;
+  padding: 22px 20px 33px;
+  border: 1px solid transparent;
+  transition: 0.5s all ease;
+  @include lg {
+    border-radius: size(16);
+    padding: size(40) size(35) ;
+  }
+  .title {
+    max-width: 200px;
+  }
+  &_body {
+
+    p{
+      line-height: 1.75;
+    }
+  }
+
+  &_img {
+    width: 56px;
+  }
+
+  &:hover {
+    --bg: rgba(0, 0, 0, 0.058);
+    border-color: $light;
+
+  }
+}

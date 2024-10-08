@@ -1,0 +1,57 @@
+@import "../../style/variable.scss";
+
+.tooltip {
+  z-index: 11;
+  
+  &_left {
+    .tooltip_point {
+      &::after {
+        left: initial;
+        right: 0;
+        transform-origin: right;
+      }
+      
+    }
+    .tooltip_content {
+      left: initial;
+      right: 130px;
+      text-align: right;
+    }
+  }
+
+  &_point {
+    --size: 14px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    --tr: 0;
+    
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(2);
+      top: 50%;
+      background-color: rgba(255, 255, 255, 0.199);
+       border-radius: 50%;
+    }
+    &::after {
+      content: '';
+      width: 130px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      border: 1px dashed #fff;
+      transform: scaleX(var(--tr));
+      transform-origin: left;
+    }
+  }
+
+  &_content {
+    width: 170px;
+    top: -8px;
+    left: 130px;
+  }
+}

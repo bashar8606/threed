@@ -31,36 +31,6 @@
         }
     }
 
-
-
-    &_credit {
-        border-top: 1px solid #252525;
-        padding: 15px 0;
-
-        @include lg {
-            padding: size(30) 0;
-        }
-
-        p {
-            color: #DADADA;
-            line-height: 1;
-            font-size: 13px;
-
-            @include lg {
-                font-size: size(15);
-            }
-
-            a {
-                color: #DADADA;
-                transition: 0.3s all ease;
-
-                &:hover {
-                    color: #fff;
-                }
-            }
-        }
-    }
-
     .title {
         font-size: 16px;
 
@@ -103,5 +73,12 @@
             list-style: none;
 
         }
+    }
+}
+
+.subscribe_wrap {
+    margin-bottom: size(50);
+    @include lg {
+        margin-bottom: size(96);
     }
 }
