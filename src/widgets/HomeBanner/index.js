@@ -113,7 +113,7 @@ const HomeBanner = ({ data }) => {
               </div>
             </div>
             <div className="col-lg-3 d-none d-lg-block ">
-              <Link href="/" className={`${style.fade} ${style.link}`}>
+              <Link href="/" className={` ${style.link}`}>
                   <p className="text-white"> The Future,<br/> Visually Your</p>
                   <span></span>
               </Link>
