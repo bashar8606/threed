@@ -13,7 +13,7 @@ function Footer() {
                     <Subscribe style={style} />
                     <div className="row gy-3 gy-lg-0 justify-content-lg-between">
                         <div className="col-lg-4">
-                            <h2 className='text-primary fw-600 h5'>Aetheria</h2>
+                            <h3 className='text-primary fw-600 h5'>Aetheria</h3>
                             <p className='title-md text-light'>Our VR technology with AI transforms your perception, making the impossible possible. Discover worlds beyond imagination and redefine your reality.</p>
 
                             <ul className={`${style.social} mt-3 mt-lg-3 row gx-2`}>
@@ -40,7 +40,7 @@ function Footer() {
                         <div className="col-lg-5">
                             <div className="row row-cols-md-3 row-cols-2 gy-2">
                                 <div>
-                                    <h4 className={`${style.title} mb-2 mb-lg-3 title-md text-white fw-600 ff-secondary `}>Support</h4>
+                                    <h3 className={`${style.title} mb-2 mb-lg-3 title-md text-white fw-600 ff-secondary `}>Support</h3>
                                     <ul className={`ps-0 mb-0 ${style.nav}`}>
                                         {data?.map((item, i) => {
                                             return (
@@ -52,7 +52,7 @@ function Footer() {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h4 className={`${style.title} mb-2 mb-lg-3 title-md text-white fw-600 ff-secondary `}>Company</h4>
+                                    <h3 className={`${style.title} mb-2 mb-lg-3 title-md text-white fw-600 ff-secondary `}>Company</h3>
                                     <ul className={`ps-0 mb-0 ${style.nav}`}>
                                         {data?.map((item, i) => {
                                             return (
@@ -66,7 +66,7 @@ function Footer() {
                                 </div>
 
                                 <div>
-                                    <h4 className={`${style.title} mb-2 mb-lg-3 title-md text-white fw-600 ff-secondary `}>Legal</h4>
+                                    <h3 className={`${style.title} mb-2 mb-lg-3 title-md text-white fw-600 ff-secondary `}>Legal</h3>
                                     <ul className={`ps-0 mb-0 ${style.nav}`}>
                                         {data?.map((item, i) => {
                                             return (

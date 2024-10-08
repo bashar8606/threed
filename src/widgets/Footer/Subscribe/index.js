@@ -5,7 +5,7 @@ export default function Subscribe({ style }) {
   return (
     <div className={`row align-items-center justify-content-between ${style.subscribe_wrap}`}>
       <div className="col-lg-5">
-        <h3 className={`${style.footer_spec__title} h4 mb-1 fw-400 text-white mb-lg-0 mb-3`}>Sign up to receive our latest news.</h3>
+        <h2 className={`${style.footer_spec__title} h4 mb-1 fw-400 text-white mb-lg-0 mb-3`}>Sign up to receive our latest news.</h2>
       </div>
 
       <div className="col-lg-4">
