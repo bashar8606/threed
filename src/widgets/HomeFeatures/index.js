@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const HomeFeatures = ({ data }) => {
-  const { main, customSettings } = useHomeFeatures({ style });
+  const { main } = useHomeFeatures({ style });
 
   return (
     <section

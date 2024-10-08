@@ -2,13 +2,10 @@
 import style from "./HomeChoose.module.scss";
 import { useHomeChoose } from "./useHomeChoose";
 import SpecCard from "@/components/SpecCard";
-import Slider from "@/components/Slider";
-import { SwiperSlide } from "swiper/react";
-import Image from "next/image";
 import Link from "next/link";
 
 const HomeChoose = ({ data }) => {
-  const { main, customSettings } = useHomeChoose({ style });
+  const { main } = useHomeChoose({ style });
 
   return (
     <section

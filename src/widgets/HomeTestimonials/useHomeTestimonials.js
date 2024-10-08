@@ -9,8 +9,6 @@ export const useHomeTestimonials = ({style}) => {
   gsap.registerPlugin(ScrollTrigger);
   const main = useRef(null);
 
-
-
   useGSAP(() => {
  
 
