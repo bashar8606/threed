@@ -57,10 +57,10 @@ function Header() {
                                 })}
                             </Nav>
                             <Nav className="ms-auto pe-xl-3 align-items-xl-center h-100 d-none d-lg-flex">
-                                <div className={`${style.search} d-flex rounded-pill`}><input type="text" placeholder="Search"  className="form-control title-xs bg-transparent border-0"/> <button  className='btn text-white btn-transparent rounded-pill ' >
-<GrSearch /></button></div>
+                                <div className={`${style.search} d-flex rounded-pill`}><input type="text" placeholder="Search" aria-label="search"   className="form-control title-xs bg-transparent border-0"/> <button  className='btn text-white btn-transparent rounded-pill ' >
+<GrSearch /><span className="visually-hidden">Search</span></button></div>
                               
-                                <Link className='nav-link h6 mb-0 pe-0'  href={'/'}><MdOutlineShoppingCart /></Link>
+                                <Link className='nav-link h6 mb-0 pe-0' aria-label="Cart"  href={'/'}><MdOutlineShoppingCart /><span className="visually-hidden">Cart</span></Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
