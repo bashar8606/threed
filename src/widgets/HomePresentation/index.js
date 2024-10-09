@@ -36,7 +36,6 @@ const HomePresentation = ({ data }) => {
               <div className="ratio">
                 <Image
                   src={"/assets/images/shape1.png"}
-                  priority={true}
                   fill
                   className="object-fit-cover"
                   sizes="50vw"
@@ -49,7 +48,6 @@ const HomePresentation = ({ data }) => {
               <div className="ratio">
                 <Image
                   src={"/assets/images/banner1.png"}
-                  priority={true}
                   fill
                   className="object-fit-cover"
                   sizes="50vw"

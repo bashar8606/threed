@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const HomeFeatures = ({ data }) => {
-  const { main, customSettings } = useHomeFeatures({ style });
+  const { main } = useHomeFeatures({ style });
 
   return (
     <section
@@ -37,7 +37,6 @@ const HomeFeatures = ({ data }) => {
                     <span className={`rounded-pill position-absolute border border-primary d-block ${style.round}`}></span>
                     <Image
                       src={"/assets/images/stroke.png"}
-                      priority={true}
                       fill
                       sizes="50vw"
                       className={style.stroke}
@@ -48,7 +47,6 @@ const HomeFeatures = ({ data }) => {
                       <div className="ratio ratio-1x1">
                         <Image
                           src={item?.img}
-                          priority={true}
                           fill
                           className="object-fit-cover"
                           sizes="50vw"
@@ -70,7 +68,6 @@ const HomeFeatures = ({ data }) => {
             <div className={`${style.shape} ratio position-absolute`}>
               <Image
                 src={"/assets/images/shape2.png"}
-                priority={true}
                 fill
                 className="object-fit-cover"
                 sizes="90vw"
@@ -83,7 +80,6 @@ const HomeFeatures = ({ data }) => {
             <div className={`ratio ${style.cover_img} overflow-hidden`}>
               <Image
                 src={"/assets/images/banner1.png"}
-                priority={true}
                 fill
                 className="object-fit-cover"
                 sizes="50vw"

@@ -11,7 +11,6 @@ export default function TestimonialCard({ data }) {
                     <div className={`ratio ratio-1x1 rounded-pill overflow-hidden ${style.card_img}`}>
                         <Image
                             src={data?.img}
-                            priority={true}
                             fill
                             className="object-fit-cover"
                             sizes="50vw"

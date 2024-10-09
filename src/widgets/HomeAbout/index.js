@@ -39,7 +39,6 @@ const HomeAbout = ({ data }) => {
               <div className={`${style.shape} ratio position-absolute`}>
                 <Image
                   src={"/assets/images/shape2.png"}
-                  priority={true}
                   fill
                   className="object-fit-cover"
                   sizes="90vw"
@@ -53,7 +52,6 @@ const HomeAbout = ({ data }) => {
               <div className={`ratio ${style.cover_img}`}>
                 <Image
                   src={"/assets/images/banner1.png"}
-                  priority={true}
                   fill
                   className="object-fit-cover"
                   sizes="50vw"

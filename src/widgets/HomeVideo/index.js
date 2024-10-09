@@ -17,7 +17,6 @@ const HomeVideo = ({ data }) => {
       <div className={`${style.shape} ratio d-none d-lg-block position-absolute`}>
         <Image
           src={"/assets/images/shape2.png"}
-          priority={true}
           fill
           className="object-fit-cover"
           sizes="90vw"

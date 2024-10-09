@@ -48,7 +48,6 @@ const HomeBrands = ({ data }) => {
                 <div className={`${style.brand} ratio`}>
                   <Image
                     src={item?.img}
-                    priority={true}
                     fill
                     className="object-fit-contain"
                     sizes="50vw"
