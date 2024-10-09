@@ -2,13 +2,10 @@
 import style from "./HomeChoose.module.scss";
 import { useHomeChoose } from "./useHomeChoose";
 import SpecCard from "@/components/SpecCard";
-import Slider from "@/components/Slider";
-import { SwiperSlide } from "swiper/react";
-import Image from "next/image";
 import Link from "next/link";
 
 const HomeChoose = ({ data }) => {
-  const { main, customSettings } = useHomeChoose({ style });
+  const { main } = useHomeChoose({ style });
 
   return (
     <section
@@ -28,7 +25,7 @@ const HomeChoose = ({ data }) => {
             </h3>
           </div>
         </div>
-        <div className={`row row-cols-lg-3 gx-lg-3 gx-xl-4 ${style.card_wrap}`}>
+        <div className={`row row-cols-md-3 row-cols-lg-3 gx-lg-3 gx-xl-4 ${style.card_wrap}`}>
           {cards?.map((item, i)=>{
             return(
               <div key={i}>

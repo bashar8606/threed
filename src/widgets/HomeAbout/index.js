@@ -3,8 +3,7 @@ import style from "./HomeAbout.module.scss";
 import { useHomeAbout } from "./useHomeAbout";
 import Image from "next/image";
 import Link from "next/link";
-import { MdArrowOutward } from "react-icons/md";
-
+import { MdArrowOutward, MdKeyboardArrowRight } from "react-icons/md";
 const HomeAbout = ({ data }) => {
   const { main } = useHomeAbout({ style });
 
@@ -47,16 +46,19 @@ const HomeAbout = ({ data }) => {
                 />
               </div>
 
+              <span class={`${style.cover_label} rounded-pill border border-white d-inline-block fw-300 title-md mb-2 text-white px-3 py-1 position-absolute`}>AI Health</span>
+              <span class={`${style.cover_arrow}  d-inline-block  h4 text-white position-absolute`}><MdKeyboardArrowRight/></span>
+
 
 
               <div className={`ratio ${style.cover_img}`}>
                 <Image
-                  src={"/assets/images/banner1.png"}
+                  src={"/assets/images/bg2.png"}
                   fill
                   className="object-fit-cover"
                   sizes="50vw"
                   quality={90}
-                  alt={`a girl wearing a VR Box`}
+                  alt={`a man and boy wearing  VR Boxes`}
                 />
               </div>
             </div>

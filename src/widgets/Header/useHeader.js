@@ -1,5 +1,4 @@
-import { useLayoutEffect, useRef } from "react";
-import { Elastic, Expo, Power4, gsap } from "gsap";
+import { useRef } from "react";
 import useGetDeviceType from "@/hooks/useGetDeviceType";
 import { useState } from "react";
 

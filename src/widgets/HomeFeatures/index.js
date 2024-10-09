@@ -21,7 +21,7 @@ const HomeFeatures = ({ data }) => {
             <h3 className={`${style.title} ff-secondary h4 fw-400 text-white`}>
               Beyond the Screen
             </h3>
-            <p className="text-light title-md">
+            <p className="text-light title-md mb-4 mb-lg-5">
               Break free from traditional screens and step into a world where
               sophisticated AI and VR combine to bring your most vivid fantasies
               to life with unparalleled realism.
@@ -79,12 +79,12 @@ const HomeFeatures = ({ data }) => {
 
             <div className={`ratio ${style.cover_img} overflow-hidden`}>
               <Image
-                src={"/assets/images/banner1.png"}
+                src={"/assets/images/bg3.png"}
                 fill
                 className="object-fit-cover"
                 sizes="50vw"
                 quality={90}
-                alt={`a girl wearing a VR Box`}
+                alt={`a man wearing a VR Box in space`}
               />
             </div>
           </div>
@@ -99,10 +99,10 @@ export default HomeFeatures;
 const card = [
   {
     title: "Innovate Your Imagination",
-    img: "/assets/images/banner1.png",
+    img: "/assets/images/avatar1.png",
   },
   {
     title: "Personalized Virtual Realities Tailored by Advanced AI",
-    img: "/assets/images/banner1.png",
+    img: "/assets/images/avatar2.png",
   },
 ];

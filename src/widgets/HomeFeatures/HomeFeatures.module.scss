@@ -35,9 +35,12 @@
     flex: 0 0 auto;
     width: 56px;
     border-radius: 8px;
+    img {
+      transform: scale(1);
+      transition: 0.5s transform ease-in-out;
+      will-change: transform;
+    }
   }
-
-
   .round {
     --size: 26px;
     width: var(--size);
@@ -45,7 +48,25 @@
     z-index: 1;
     bottom: -2%;
     right: 1%;
+    background-color: transparent;
+    transition: 0.5s all ease;
+    will-change: transform;
   }
+  &:hover {
+    .card_icon {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    .round {
+      transform: scale(0.7);
+      background-color: $primary;
+    }
+  }
+
+
+
+  
 }
 
 

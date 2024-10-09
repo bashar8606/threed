@@ -5,6 +5,7 @@ import { useHomeBanner } from "./useHomeBanner";
 import MetaBox from "@/components/MetaBox";
 import BuyNow from "@/components/BuyNow";
 import Link from "next/link";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const HomeBanner = ({ data }) => {
   const { main, width } = useHomeBanner({ style });
@@ -62,7 +63,7 @@ const HomeBanner = ({ data }) => {
           </div>
 
           <div className="row justify-content-between align-items-end">
-            <div className={`col-lg-3 `}>
+            <div className={`col-lg-4 col-xl-3 `}>
               <h3 className={`${style.fade} title-md text-white`}>Reality Perfected</h3>
               <p className={`${style.fade} text-light title-md`}>
                 Dive into a visually stunning future with our AI-powered VR.
@@ -112,10 +113,12 @@ const HomeBanner = ({ data }) => {
                 <BuyNow />
               </div>
             </div>
-            <div className="col-lg-3 d-none d-lg-block ">
-              <Link href="/" className={` ${style.link}`}>
-                  <p className="text-white"> The Future,<br/> Visually Your</p>
-                  <span></span>
+            <div className="col-lg-3 d-none d-xl-block ">
+              <Link href="/" className={` ${style.link} d-flex align-items-center justify-content-end`}>
+                  <p className="text-white fw-400 mb-0 me-2"> The Future,<br/> Visually Your</p>
+                  <span className="bg-grey text-white btn btn-grey  rounded-pill d-flex align-items-center justify-content-center">
+                  <MdKeyboardArrowRight />
+                  </span>
               </Link>
              
             </div>
